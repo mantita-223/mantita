@@ -5,5 +5,5 @@ function mantita.return() {
 }
 
 function mantitaedit() {
-	python3 launchmt.py
+	python3 ~/mantita/launchmt.py
 }
