@@ -25,8 +25,8 @@ def openfile():
 window = Tk()
 window.title("Untitled - Mantita Text Edit")
 
-sphoto = PhotoImage(file = r"save.png")
-lphoto = PhotoImage(file = r"load.png")
+sphoto = PhotoImage(file = r"~/mantita/save.png")
+lphoto = PhotoImage(file = r"~/mantita/load.png")
 
 control_frame = Frame(window)
 savebtn = Button(control_frame, text = "Save", image = sphoto, compound = LEFT, command = savefile)
