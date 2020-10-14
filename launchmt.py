@@ -16,7 +16,7 @@ def savefile():
 def openfile():
     files = [('All files', '*.*')]
     file = askopenfilename(filetypes = files, defaultextension = files)
-	try:
+    try:
     	the_thing = open(file, 'r')
     	edit.delete(1.0,"end")
     	edit.insert(1.0, the_thing.read())
