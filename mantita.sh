@@ -5,5 +5,7 @@ function mantita.return() {
 }
 
 function mantitaedit() {
+	echo "Launching Mantita Text Edit..."
 	python3 ~/mantita/launchmt.py
+	echo "[PROCESS COMPLETED]"
 }
