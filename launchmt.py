@@ -6,9 +6,12 @@ from tkinter.filedialog import asksaveasfilename, askopenfilename
 def savefile():
     files = [('Text Document', '*.txt')]
     file = asksaveasfilename(filetypes = files, defaultextension = files)
-    the_thing = open(file, 'w')
-    content = edit.get(1.0, "end-1c")
-    the_thing.writelines(content)
+    try:
+        the_thing = open(file, 'w')
+        content = edit.get(1.0, "end-1c")
+        the_thing.writelines(content)
+    except:
+        pass
 
 def openfile():
     files = [('All files', '*.*')]
